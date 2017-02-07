@@ -30,13 +30,18 @@ define('DB_PASSWORD', '123');
 
 /** MySQL主机 */
 #define('DB_HOST', 'rm-wz9442t9262dwwv4mo.mysql.rds.aliyuncs.com');
-define('DB_HOST', '192.168.1.3');
+define('DB_HOST', '192.168.1.170');
 
 /** 创建数据表时默认的文字编码 */
 define('DB_CHARSET', 'utf8');
 
 /** 数据库整理类型。如不确定请勿更改 */
 define('DB_COLLATE', '');
+
+
+define('WP_REDIS_HOST', 'redis');
+define('WP_REDIS_PORT', '6379');
+define('WP_REDIS_DATABASE', '0');
 
 /**#@+
  * 身份认证密钥与盐。
