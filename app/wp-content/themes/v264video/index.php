@@ -6,16 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>首页</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <!--<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="styl/Style.css">
     <link rel="stylesheet" href="styl/home.css">
-    
+    -->
+    <?php wp_enqueue_scripts('bootstrap-min-css'); ?>
+    <?php wp_enqueue_scripts('style'); ?>
+    <?php wp_enqueue_scripts('home'); ?>
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+    <?php wp_head(); ?>
 </head>
 
 <body>
@@ -31,7 +35,7 @@
                     <span class="icon-bar"></span>  
                 </button>
                 <a class="navbar-brand" href="#">
-                    <img src="images/icon/logo.png">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/icon/logo.png">
                 </a>
             </div>
             <!-- menu section -->
@@ -46,7 +50,7 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right" style="margin-top: 10px">
                     <li>
-                        <img src="images/icon/search.png" alt="" style="padding: 20px">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/icon/search.png" alt="" style="padding: 20px">
                     </li>
                     <li><a href="# ">注册</a></li>
                     <li><a href="#">登录</a></li>
@@ -67,13 +71,13 @@
                 <!-- 轮播（Carousel）项目 -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img src="images/11.jpg" alt="First slide">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/11.jpg" alt="First slide">
                     </div>
                     <div class="item">
-                        <img src="images/12.jpg" alt="Second slide">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/12.jpg" alt="Second slide">
                     </div>
                     <div class="item">
-                        <img src="images/13.jpg" alt="Third slide">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/13.jpg" alt="Third slide">
                     </div>
                 </div>
                 <!-- 轮播（Carousel）导航 -->
@@ -90,23 +94,23 @@
             <ul id="myRoundabout">
 
                 <li>
-                    <a href="#" target="_blank" title="图片"><img src="images/11.jpg" alt='图片' style="border: 0"></a>
+                    <a href="#" target="_blank" title="图片"><img src="<?php echo get_template_directory_uri(); ?>/images/11.jpg" alt='图片' style="border: 0"></a>
                 </li>
 
                 <li>
-                    <a href="#" target="_blank" title="图片"><img src="images/12.jpg" alt='图片' style="border: 0"></a>
+                    <a href="#" target="_blank" title="图片"><img src="<?php echo get_template_directory_uri(); ?>/images/12.jpg" alt='图片' style="border: 0"></a>
                 </li>
 
                 <li>
-                    <a href="#" target="_blank" title="图片"><img src="images/14.jpg" alt='图片' style="border: 0"></a>
+                    <a href="#" target="_blank" title="图片"><img src="<?php echo get_template_directory_uri(); ?>/images/14.jpg" alt='图片' style="border: 0"></a>
                 </li>
 
                 <li>
-                    <a href="#" target="_blank" title="图片"><img src="images/13.jpg" alt='图片' style="border: 0"></a>
+                    <a href="#" target="_blank" title="图片"><img src="<?php echo get_template_directory_uri(); ?>/images/13.jpg" alt='图片' style="border: 0"></a>
                 </li>
 
                 <li>
-                    <a href="#" target="_blank" title="图片"><img src="images/12.jpg" alt='图片' style="border: 0"></a>
+                    <a href="#" target="_blank" title="图片"><img src="<?php echo get_template_directory_uri(); ?>/images/12.jpg" alt='图片' style="border: 0"></a>
                 </li>
 
             </ul>
@@ -134,149 +138,73 @@
                                     <div class="row item-box">
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/4.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/4.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/8.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/8.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/9.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/9.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/4.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/4.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/2.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/2.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/1.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="row item-box">
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/3.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/6.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/3.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/1.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
@@ -286,73 +214,73 @@
                                     <div class="row item-box">
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/2.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/7.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/6.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
@@ -362,73 +290,149 @@
                                     <div class="row item-box">
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/2.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/7.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row item-box">
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
@@ -473,10 +477,10 @@
                                     <div class="row item-box">
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
@@ -486,10 +490,10 @@
                                     <div class="row item-box">
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
@@ -499,10 +503,10 @@
                                     <div class="row item-box">
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
@@ -549,149 +553,73 @@
                                     <div class="row item-box">
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="item">
-                                    <div class="row item-box">
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
@@ -701,10 +629,55 @@
                                     <div class="row item-box">
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
@@ -713,61 +686,16 @@
                                                 <img src="images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
-                                                <label>团队名</label>
-                                            </div>
-                                        </div>
-                                        <div class="col-md-3 col-xs-12">
-                                            <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
-                                            </div>
-                                            <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
@@ -777,73 +705,149 @@
                                     <div class="row item-box">
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="row item-box">
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
+                                                <label>团队名</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-3 col-xs-12">
+                                            <div class="item-cover">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
+                                            </div>
+                                            <div class="item-avatar">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
@@ -888,10 +892,10 @@
                                     <div class="row item-box">
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/1.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/1.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/2.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/2.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
@@ -901,10 +905,10 @@
                                     <div class="row item-box">
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/4.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/4.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
@@ -914,10 +918,10 @@
                                     <div class="row item-box">
                                         <div class="col-md-3 col-xs-12">
                                             <div class="item-cover">
-                                                <img src="images/5.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/5.jpg" alt="">
                                             </div>
                                             <div class="item-avatar">
-                                                <img src="images/3.jpg" alt="">
+                                                <img src="<?php echo get_template_directory_uri(); ?>/images/3.jpg" alt="">
                                                 <label>团队名</label>
                                             </div>
                                         </div>
@@ -955,73 +959,73 @@
                     </div>
                     <div class="col-md-2 col-xs-12">
                         <div class="cate-item">
-                            <img src="images/icon/yunshu.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/icon/yunshu.png" alt="">
                             <label>交通运输</label>
                         </div>
                     </div>
                     <div class="col-md-2 col-xs-12">
                         <div class="cate-item">
-                            <img src="images/icon/shuma.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/icon/shuma.png" alt="">
                             <label>电器数码</label>
                         </div>
                     </div>
                     <div class="col-md-2 col-xs-12">
                         <div class="cate-item">
-                            <img src="images/icon/keji.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/icon/keji.png" alt="">
                             <label>网络科技</label>
                         </div>
                     </div>
                     <div class="col-md-2 col-xs-12">
                         <div class="cate-item">
-                            <img src="images/icon/meizhuang.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/icon/meizhuang.png" alt="">
                             <label>日用美妆</label>
                         </div>
                     </div>
                     <div class="col-md-2 col-xs-12">
                         <div class="cate-item">
-                            <img src="images/icon/fushi.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/icon/fushi.png" alt="">
                             <label>服饰搭配</label>
                         </div>
                     </div>
                     <div class="col-md-2 col-xs-12">
                         <div class="cate-item">
-                            <img src="images/icon/baoxian.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/icon/baoxian.png" alt="">
                             <label>金融保险</label>
                         </div>
                     </div>
                     <div class="col-md-2 col-xs-12">
                         <div class="cate-item">
-                            <img src="images/icon/dichan.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/icon/dichan.png" alt="">
                             <label>家居地产</label>
                         </div>
                     </div>
                     <div class="col-md-2 col-xs-12">
                         <div class="cate-item">
-                            <img src="images/icon/lvxing.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/icon/lvxing.png" alt="">
                             <label>购物旅行</label>
                         </div>
                     </div>
                     <div class="col-md-2 col-xs-12">
                         <div class="cate-item">
-                            <img src="images/icon/yiliao.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/icon/yiliao.png" alt="">
                             <label>医疗保健</label>
                         </div>
                     </div>
                     <div class="col-md-2 col-xs-12">
                         <div class="cate-item">
-                            <img src="images/icon/yule.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/icon/yule.png" alt="">
                             <label>文教娱乐</label>
                         </div>
                     </div>
                     <div class="col-md-2 col-xs-12">
                         <div class="cate-item">
-                            <img src="images/icon/yiliao.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/icon/yiliao.png" alt="">
                             <label>医疗保健</label>
                         </div>
                     </div>
                     <div class="col-md-2 col-xs-12">
                         <div class="cate-item">
-                            <img src="images/icon/yule.png" alt="">
+                            <img src="<?php echo get_template_directory_uri(); ?>/images/icon/yule.png" alt="">
                             <label>文教娱乐</label>
                         </div>
                     </div>
@@ -1119,21 +1123,32 @@
             </div>
         </div>
     </div>
+<?php wp_footer(); ?>
 </body>
-<script src="bower_components/jquery/dist/jquery.js"></script>
+
+<!--<script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
 <script src="js/hammer.min.js"></script>
 <script src="js/jquery.hammer.js"></script>
+-->
+<?php wp_enqueue_scripts('jquery-js'); ?>
+<?php wp_enqueue_scripts('bootstrap-js'); ?>
+<?php wp_enqueue_scripts('hammer-js'); ?>
+<?php wp_enqueue_scripts('jquery-hammer'); ?>
 <script>
     var $jq = $.noConflict(true);
 
 </script>
-
+<?php wp_enqueue_scripts('jquery-min'); ?>
+<?php wp_enqueue_scripts('roundabout'); ?>
+<?php wp_enqueue_scripts('roundabout_shapes'); ?>
+<?php wp_enqueue_scripts('gallery_initr'); ?>
+<!--
 <script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="js/roundabout.js"></script>
 <script type="text/javascript" src="js/roundabout_shapes.js"></script>
 <script type="text/javascript" src="js/gallery_init.js"></script>
-
+-->
 <script>
     // 广告创意
     $jq('#carousel_1').carousel({
