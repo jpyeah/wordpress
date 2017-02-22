@@ -1,0 +1,244 @@
+body {
+  margin-bottom: 100px;
+}
+.content-title {
+  margin-top: 15px;
+  border-left: 5px solid #c7a26c;
+  padding-left: 5px;
+  overflow: hidden;
+}
+.content-title h4 {
+  display: block;
+  font-size: 18px;
+  margin-top: 5px;
+}
+.content-title span {
+  display: block;
+  font-size: 12px;
+  margin-top: 5px;
+}
+.swipe {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+.swipe .swipe-item {
+  width: 100%;
+  height: 500px;
+}
+.item-cover {
+  width: 100%;
+  height: 180px;
+}
+.item-cover img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+.item-box>div {
+  margin-top: 15px;
+}
+.item-avatar {
+  width: 100%;
+  height: 40px;
+  overflow: hidden;
+  margin-top: 15px;
+}
+.item-avatar img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  float: left;
+  border-radius: 100%;
+}
+.item-avatar label {
+  line-height: 40px;
+  float: left;
+  margin-left: 15px;
+}
+.item-slider-line {
+  margin-top: 20px;
+  height: 3px;
+  background: #eee;
+}
+.item-slider-line .item-slider-active {
+  height: 3px;
+  width: 100%;
+  background: #ccc;
+}
+.category-box {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  overflow: hidden;
+  background: #fafafa;
+}
+.cate-item {
+  background: #3c3c3c;
+  width: 100%;
+  height: 100px;
+  margin-top: 15px;
+}
+.cate-item img {
+  display: block;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  width: 40px;
+  height: 60px;
+}
+.cate-item label {
+  display: block;
+  color: #fff;
+  text-align: center;
+}
+.news-box .news-item {
+  margin: 15px 0;
+}
+.news-box .news-item span {
+  display: block;
+  font-size: 14px;
+}
+.news-box .news-item h4 {
+  font-size: 16px;
+  padding: 5px 0;
+}
+.news-box .news-item p {
+  font-size: 14px;
+  color: #333434;
+  padding: 5px 0;
+}
+.news-box .news-item a {
+  display: block;
+  font-size: 16px;
+  color: #00a0e9;
+}
+.news-box .qrcode {
+  background: #f5f3f4;
+  width: 100%;
+  padding: 20px;
+  margin-top: 40px;
+}
+.news-box .qrcode span {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+.news-box .qrcode img {
+  width: 140px;
+  margin: 0 auto;
+}
+.footer {
+  background: #fafafa;
+  height: 200px;
+}
+.footer h3 {
+  text-align: center;
+  padding: 15px 0;
+}
+/* 登录 */
+.login-header {
+  width: 100%;
+  height: 80px;
+  background: #fff;
+}
+.login-header .login-nav {
+  width: 100%;
+  margin: 20px auto;
+}
+.login-container {
+  background: #eee;
+}
+.login-container .login-box {
+  height: 290px;
+  background: #fff;
+  margin: 70px auto;
+  padding: 20px;
+}
+.login-container .login-box .login-cover img {
+  width: 100%;
+  height: 250px;
+}
+.login-container .login-box .login-form .error-msg {
+  display: block;
+  float: right;
+  font-size: 12px;
+  padding: 5px;
+  color: #df6748;
+}
+.login-container .login-box .login-form .btn-submit {
+  background: #df6748;
+  width: 100%;
+  color: #fff;
+}
+.login-container .login-box .login-form .login-tool {
+  font-size: 14px;
+  padding: 10px 0;
+}
+.login-container .login-box .login-form .login-tool span {
+  display: block;
+  float: left;
+}
+.login-container .login-box .login-form .login-tool a {
+  list-style: none;
+  text-decoration: none;
+  color: #df6748;
+}
+.login-container .login-box .login-form .login-tool a:hover {
+  text-decoration: none;
+}
+.login-container .login-box .login-form .login-tool a:nth-child(2) {
+  display: block;
+  float: left;
+}
+.login-container .login-box .login-form .login-tool a:nth-child(3) {
+  display: block;
+  float: right;
+}
+.login-bottom-item {
+  width: 100%;
+}
+.login-bottom-item img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  margin: 20px auto;
+}
+.login-bottom-item h5 {
+  font-size: 12px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.login-bottom-item span {
+  display: block;
+  text-align: center;
+  font-size: 12px;
+}
+.regist-form {
+  background: #fff;
+  padding: 15px;
+  margin: 130px 0;
+  overflow: hidden;
+}
+.regist-form .regist-msg {
+  float: right;
+  font-size: 14px;
+}
+.regist-form .regist-msg a {
+  margin-left: 10px;
+}
+.regist-form .btn-regist {
+  width: 100%;
+  background: #e06849;
+  color: #fff;
+}
+.video-box {
+  background: #eee;
+  padding-bottom: 20px;
+}
+.video-box #video-pc {
+  margin: 0 auto;
+}
+.video-box #video-mobile {
+  margin: 0 auto;
+}

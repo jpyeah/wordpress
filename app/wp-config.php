@@ -23,14 +23,14 @@
 define('DB_NAME', 'wordpress');
 
 /** MySQL数据库用户名 */
-define('DB_USER', 'root');
+define('DB_USER', 'bibitest');
 
 /** MySQL数据库密码 */
-define('DB_PASSWORD', '123');
+define('DB_PASSWORD', 'Bibi2016');
 
 /** MySQL主机 */
-#define('DB_HOST', 'rm-wz9442t9262dwwv4mo.mysql.rds.aliyuncs.com');
-define('DB_HOST', '192.168.1.170');
+define('DB_HOST', 'rm-wz9442t9262dwwv4mo.mysql.rds.aliyuncs.com');
+#define('DB_HOST', '192.168.1.166');
 
 /** 创建数据表时默认的文字编码 */
 define('DB_CHARSET', 'utf8');
