@@ -22,6 +22,9 @@ function v264video_scripts() {
 	wp_enqueue_script( 'roundabout_shapes', get_template_directory_uri() . '/js/roundabout_shapes.js', array(), '', true );
 	wp_enqueue_script( 'gallery_init', get_template_directory_uri() . '/js/gallery_init.js', array(), '', true );
 
+	wp_enqueue_script( 'index-js', get_template_directory_uri() . '/js/index.js', array(), '', true );
+	wp_enqueue_script( 'noconflict', get_template_directory_uri() . '/js/noconflict.js', array(), '', true );
+
 
 }
 add_action( 'wp_enqueue_scripts', 'v264video_scripts' );
