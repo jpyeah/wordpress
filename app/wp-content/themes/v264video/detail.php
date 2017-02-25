@@ -1,59 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+/*
+Template Name: detail
+*/
+?>
+<?php
+/**
+ * The main template file
+ *
+ * This is the most generic template file in a WordPress theme
+ * and one of the two required files for a theme (the other being style.css).
+ * It is used to display a page when nothing more specific matches a query.
+ * E.g., it puts together the home page when no home.php file exists.
+ *
+ * @link http://san.org
+ *
+ * @package WordPress
+ * @subpackage v264video
+ */
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>首页</title>
-    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styl/home.css">
+get_header(); ?>
     <script src="//cytroncdn.videojj.com/latest/Iva.js"></script>
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-    <!-- header -->
-    <nav class="navbar navbar-default" role="navigation" style="min-height: 70px;margin: 0;border: 0">
-        <div class="container-fluid" style="padding-left: 15px;padding-right: 15px;background: #000">
-            <!--header section -->
-            <div class="navbar-header" style="min-height: 70px;">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">  
-                    <span class="sr-only">Toggle navigation</span>  
-                    <span class="icon-bar"></span>  
-                    <span class="icon-bar"></span>  
-                    <span class="icon-bar"></span>  
-                </button>
-                <a class="navbar-brand" href="#">
-                    <img src="images/icon/logo.png">
-                </a>
-            </div>
-            <!-- menu section -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-                <ul class="nav navbar-nav" style="margin-top: 10px;margin-left: 250px">
-                    <li><a href="# ">首页</a></li>
-                    <li><a href="# ">找团队</a></li>
-                    <li><a href="#">下单</a></li>
-                    <li><a href="#">关于我们</a></li>
-                    <li><a href="#">合作流程</a></li>
-                    <li><a href="#">资讯</a></li>
-                </ul>
-                <ul class="nav navbar-nav navbar-right" style="margin-top: 10px">
-                    <li>
-                        <img src="images/icon/search.png" alt="" style="padding: 20px">
-                    </li>
-                    <li><a href="# ">注册</a></li>
-                    <li><a href="#">登录</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
     <section class="video-box">
         <div class="hidden-xs" id="video-pc" style="width:748px;height:421px;"></div>
         <div class="hidden-md hidden-sm hidden-lg" id="video-mobile" style="width:100%;height:200px;"></div>
@@ -65,9 +31,10 @@
             <div class="col-md-4 col-xs-12">2</div>
         </div>
     </div>
+    <?php wp_footer(); ?>
 </body>
-<script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<?php wp_enqueue_scripts('jquery-js'); ?>
+<?php wp_enqueue_scripts('bootstrap-js'); ?>
 <script>
     new Iva(
         'video-mobile',//父容器id
@@ -123,5 +90,8 @@
     );
 
 </script>
+
+
+<?php custom_registration_function(); ?>
 
 </html>

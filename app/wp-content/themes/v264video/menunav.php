@@ -19,7 +19,7 @@
                     <span class="icon-bar"></span>  
                 </button>
                 <a class="navbar-brand" href="#">
-                    <img src="images/icon/logo.png">
+                    <img src="<?php echo get_template_directory_uri(); ?>/images/icon/logo.png">
                 </a>
             </div>
             <!-- menu section -->
@@ -34,10 +34,10 @@
                 </ul>
                 <ul class="nav navbar-nav navbar-right" style="margin-top: 10px">
                     <li>
-                        <img src="images/icon/search.png" alt="" style="padding: 20px">
+                        <img src="<?php echo get_template_directory_uri(); ?>/images/icon/search.png" alt="" style="padding: 20px">
                     </li>
                     <li><a href="# ">注册</a></li>
-                    <li><a href="#">登录</a></li>
+                    <li><a href=" <?php echo wp_login_url(get_permalink());?>">登录</a></li>
                 </ul>
             </div>
         </div>
