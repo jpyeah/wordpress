@@ -242,3 +242,245 @@ body {
 .video-box #video-mobile {
   margin: 0 auto;
 }
+.video-info .title-box {
+  overflow: hidden;
+}
+.video-info .title-box h3 {
+  width: 60%;
+  float: left;
+  margin: 20px 0;
+  font-size: 20px;
+}
+.video-info .title-box span {
+  display: block;
+  float: right;
+  margin: 20px;
+}
+.video-info .title-info a {
+  font-size: 14px;
+}
+.video-info .title-info small {
+  font-size: 14px;
+}
+.video-info .user-box {
+  overflow: hidden;
+  margin-top: 10px;
+}
+.video-info .user-box .user-box-left {
+  width: 50%;
+  float: left;
+  overflow: hidden;
+}
+.video-info .user-box .user-box-left img {
+  width: 60px;
+  height: 60px;
+  background: #008000;
+  border-radius: 100%;
+  float: left;
+}
+.video-info .user-box .user-box-left button {
+  height: 30px;
+  margin-top: 15px;
+  display: block;
+  margin-left: 20px;
+  float: left;
+  background: #0088f0;
+  color: #fff;
+  font-size: 14px;
+  outline: none;
+  border: 0;
+  padding: 5px 20px;
+  border-radius: 5px;
+}
+.video-info .user-box .user-box-right {
+  width: 50%;
+  float: right;
+  overflow: hidden;
+  line-height: 60px;
+}
+.video-info .user-box .user-box-right span {
+  display: block;
+  font-size: 16px;
+  float: left;
+}
+.video-info .user-box .user-box-right img {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 100%;
+  float: left;
+  margin-right: 20px;
+}
+.comment-count {
+  width: 100%;
+  height: 50px;
+  background: #eee;
+}
+.comment-count h3 {
+  line-height: 50px;
+  padding: 0 20px;
+}
+.comment-box ul {
+  overflow: hidden;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.comment-box ul li {
+  overflow: hidden;
+  margin-top: 10px;
+  border-bottom: 1px solid #eee;
+}
+.comment-box ul li:last-child {
+  border: 0;
+}
+.comment-box ul li img {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  float: left;
+  display: block;
+}
+.comment-box ul li .comment-content {
+  float: left;
+  width: 85%;
+  margin-left: 20px;
+}
+.comment-box ul li .comment-content h5 {
+  font-size: 18px;
+  padding: 5px 0;
+  margin: 0;
+}
+.comment-box ul li .comment-content p {
+  font-size: 16px;
+}
+.comment-box ul li .comment-content textarea {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  padding: 10px;
+  outline: none;
+}
+.comment-box ul li .comment-content textarea:focus {
+  outline: none;
+  -webkit-appearance: none;
+}
+.comment-box ul li .comment-content button {
+  color: #fff;
+  background: #e06749;
+  padding: 5px 20px;
+  border: 0px;
+  border-radius: 5px;
+  outline: none;
+  float: right;
+}
+.comment-box ul li .comment-content button:focus {
+  outline: none;
+  -webkit-appearance: none;
+}
+.more-video {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.more-video .more-box {
+  margin-bottom: 20px;
+}
+.more-video .more-box img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.order-title {
+  text-align: center;
+}
+.order-box {
+  background: #fff;
+  box-shadow: 0 0 5px #ccc;
+  padding: 50px 20px;
+  margin: 30px 0;
+}
+.order-box textarea {
+  border: 1px solid #eee;
+  border-radius: 5px;
+  outline: none;
+  -webkit-appearance: none;
+  padding: 10px;
+  width: 100%;
+  max-width: 100%;
+}
+.order-box textarea:focus {
+  outline: none;
+  -webkit-appearance: none;
+}
+.create-order {
+  width: 100%;
+  padding: 5px;
+  border: 0;
+  outline: none;
+  color: #fff;
+  background: #e06749;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 30px 0;
+}
+.setup-box {
+  position: absolute;
+  overflow: hidden;
+}
+.setup-box .line-box {
+  overflow: hidden;
+  height: 30px;
+}
+.setup-box .line-box .line {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background: #ccc;
+  top: 15px;
+}
+.setup-box .line-box ul {
+  position: relative;
+  top: 9px;
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+.setup-box .line-box ul li {
+  float: left;
+  width: 10px;
+  height: 10px;
+  background: #999;
+  border-radius: 100%;
+  margin: 0 34px;
+}
+.setup-box .line-box ul li:first-child {
+  margin-left: 0;
+}
+.setup-box .line-box ul li:last-child {
+  margin-right: 0;
+}
+.setup-box .line-box ul li.active {
+  background: #e06749;
+}
+.setup-box .line-box ul li:hover {
+  cursor: pointer;
+}
+.setup-box .line-info ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+.setup-box .line-info ul li {
+  float: left;
+  margin: 0 20px;
+}
+.setup-box .line-info ul li:first-child {
+  margin-left: 0;
+}
+.setup-box .line-info ul li:last-child {
+  margin-right: 0;
+}

@@ -903,6 +903,20 @@ get_header(); ?>
         </div>
     </div>
 
+ <?php
+$args=array(
+'orderby' => 'name',
+'order' => 'ASC',
+'type'=>'movie',
+);
+$categories=get_categories($args);
+foreach($categories as $category) {
+echo ' <li class="cat-'. $category-> slug .'">';
+echo ' <a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.' </a>';
+echo ' </li>';
+}
+?>
+
     <!-- 分类 -->
     <div class="container-fluid">
         <div class="row category-box">

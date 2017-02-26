@@ -22,5 +22,5 @@
     <?php wp_head(); ?>
 </head>
 <body>
-    <?php include (TEMPLATEPATH . '/menunav.php'); ?>
+    <?php get_template_part( 'menunav' );           // Navigation bar (nav.php) ?>
 
